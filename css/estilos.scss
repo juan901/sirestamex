@@ -1,0 +1,87 @@
+///=====================
+//  1.Patrones de colores 
+///=====================
+
+$principal: #c48808;
+$principalos: #fdd682;
+$secundario: #A4A69F;
+$terciario: #F0F2DF;
+$texto: #3a3a3a;
+
+///=====================
+//      2.Tipografia  
+///=====================
+html{
+    font-size: 14 px;
+    font-family: 'Montserrat', sans-serif;;
+}
+body{
+  
+}
+
+
+///=====================
+//      2.Estilos Colores Principial  
+///=====================
+.bg-primary {
+    background-color:$principal!important;
+  }
+.text-primary {
+    color:$texto !important;
+  }
+
+  .btn-primary {
+    background-color:$principal;
+    border-color:$principal;
+  }
+  
+  .btn-primary:hover {
+    background-color: lighten($principal,10%);
+    border-color:$principal;
+  }
+  
+  .btn-primary:focus, .btn-primary.focus {
+    
+    background-color: $principal;
+    border-color:lighten($principal,10%);
+    box-shadow: 0 0 0 0.2rem rgba($principal, 0.5);
+  }
+  
+  .btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color:$principal;
+    border-color:lighten($principal,10%);
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color:$principal;
+    border-color: $principal;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(121, 0, 0, 0.5);
+  }
+
+  
+
+///=====================
+//     Logotipo  y NavBarColor 
+///====================
+#navegacion{
+  background:$principal;
+
+  .container{
+    max-width: 100%;
+  }
+
+
+  .navbar-brand img{
+    width: 8rem;
+    height: auto;
+  }
+
+
+}
